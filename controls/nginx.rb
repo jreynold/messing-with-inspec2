@@ -8,4 +8,7 @@ control 'nginx' do
   describe ssl(port: 80) do
     it { should be_enabled }
   end
+  describe os.family do
+    it { should eq 'linux' }
+  end
 end
