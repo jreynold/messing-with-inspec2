@@ -5,4 +5,7 @@ control 'nginx' do
   describe service('nginx') do
     it { should be_running }
   end
+  describe ssl(port: 80) do
+    it { should be_enabled }
+  end
 end
