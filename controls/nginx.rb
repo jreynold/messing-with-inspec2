@@ -12,6 +12,6 @@ control 'nginx' do
     its('version') { should eq '1.14.0' }
   end
   describe nginx do
-    its('modules') { should include 'my_module' }
+    its('modules') { should include 'http_ssl' }
   end
 end
