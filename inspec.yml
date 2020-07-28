@@ -8,4 +8,3 @@ summary: An InSpec Compliance Profile
 version: 0.1.0
 supports:
   platform: os
-  platform: azure
