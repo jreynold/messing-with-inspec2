@@ -14,7 +14,4 @@ control 'nginx' do
   describe nginx do
     its('modules') { should include 'http_ssl' }
   end
-  describe nginx do
-    its('sbin_path') { should eq 'blah' }
-  end
 end
